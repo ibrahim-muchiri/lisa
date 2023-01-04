@@ -26,7 +26,7 @@ export default function Product(props) {
                 <button className='plus' onClick={() => onAdd(item)}>+</button>
                 </div>
                 ) : (
-                    <div>nothing</div>
+                    <div>Nothing to dispaly</div>
                 )}
                 </div>
                 
