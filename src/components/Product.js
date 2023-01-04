@@ -9,25 +9,25 @@ export default function Product(props) {
 
   return (
     <React.Fragment>    
-        <div className='app'>
-            <div className='app-rectangle'>
+        <div className='App'>
+            <div className='App-rectangle'>
                 <div className='search'>
                     <SearchIcon/>
                     <input type="text" placeholder='Search products'/>
                 </div>                
                 <h3>Create a transaction</h3>
-                <div>
                 <div className='product'>{product.product_name}</div>
-                </div>
-                <div>                   
-                {/* {item ? (<div>                 */}
+                
+                <div>
+                    
+                {item ? (<div>                
                   <button className='minus' onClick={() => onRemove(item)}>-</button>
-                {/* <span className='number'>{item.qty}</span> */}
-                <button className='plus' onClick={() => onAdd(product)}>+</button>
-                {/* </div>
+                <span className='number'>{item.qty}</span>
+                <button className='plus' onClick={() => onAdd(item)}>+</button>
+                </div>
                 ) : (
                     <div>nothing</div>
-                )} */}
+                )}
                 </div>
                 
 
