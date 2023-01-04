@@ -18,8 +18,7 @@ export default function Product(props) {
                 <h3>Create a transaction</h3>
                 <div className='product'>{product.product_name}</div>
                 
-                <div>
-                    
+                <div>                    
                 {item ? (<div>                
                   <button className='minus' onClick={() => onRemove(item)}>-</button>
                 <span className='number'>{item.qty}</span>
