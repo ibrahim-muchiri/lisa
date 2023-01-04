@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.App{
+    background-color: whitesmoke;
+    /* margin-top: 10px; */
+}
+.App-rectangle{
+    background-color: white;
+    height: 30%;
+    width: 350px; 
+    margin-left: 30px;   
+    margin-top: 10%;
+}

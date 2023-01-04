@@ -151,3 +151,35 @@
         
     //   </div>
     //   </div>
+
+////////////////////
+//Redux
+// const { products } = useSelector(state => state.products);  
+//   const [search, setSearch] = useState("");
+//   const cart = useSelector((state)=> state.cart);
+  
+//   const dispatch = useDispatch();
+
+//   // useEffect(() => {
+//   //   dispatch(getTotals());
+//   // }, [cart, dispatch]);
+
+ 
+// useEffect(()=> {
+//   dispatch(productsFetch());
+// }, [dispatch]);
+  
+
+  
+//   const handleDecreaseCart = (cartItem) => {
+//   dispatch(decreaseCart(cartItem));
+//   console.log(cartItem);
+// };
+
+// const handleIncreaseCart = (cartItem) => {
+//   dispatch(addToCart(cartItem));
+//   console.log(cartItem);
+// };
+///////////////////
+
+
