@@ -1,49 +1,31 @@
-import React from 'react';
-import SearchIcon from '@mui/icons-material/Search';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import "../components/product.css";
+import { GlobalContext } from "../context/GlobalContext";
+import { useContext } from "react";
+import './product.css';
 
-export default function Product(props) {
-    const { item, product, onAdd, onRemove } = props;
-
-
+export default function Product({dataProduct}) {  
+  const {onAdd, onRemove, cartItems, currentProduct} = useContext(GlobalContext);
+  // console.log(currentProduct);
   return (
-    <React.Fragment>    
-        <div className='App'>
-            <div className='App-rectangle'>
-                <div className='search'>
-                    <SearchIcon/>
-                    <input type="text" placeholder='Search products'/>
-                </div>                
-                <h3>Create a transaction</h3>
-                <div className='product'>{product.product_name}</div>
-                
-                <div>                    
-                {item ? (<div>                
-                  <button className='minus' onClick={() => onRemove(item)}>-</button>
-                <span className='number'>{item.qty}</span>
-                <button className='plus' onClick={() => onAdd(item)}>+</button>
-                </div>
-                ) : (
-                    <div>Nothing to dispaly</div>
-                )}
-                </div>
-                
+    <div className='display-items'>
+        <div className='product-items'>
+            <div className="product">{dataProduct.product_name}
+            <div className="buttons">
+            <button className='minus' onClick={()=> {onRemove(dataProduct)}}>-</button>
 
-        <div className='rectangle-total'>        
-           <h5 className='total-amount'>Total amount</h5>
-           <span className='kes'>KES- {}</span>        
-          
-           <div className='done-rectangle'>
-             <button className='done-button'>Done
-             <ArrowForwardIcon className='done-arrow'/> 
-             </button>
-           </div>
-           </div>
+            {cartItems.map((cartItem) =>
+              cartItem.id === dataProduct.id ? (
+                <span key={cartItem.id} className="number">
+                  {cartItem.quantity}
+                </span>
+              ) : (
+                ''
+              )
+            )}
 
+            <button className='plus' onClick={() => {onAdd(dataProduct)}}>+</button>
+            </div>
             </div>
         </div>
-
-    </React.Fragment>
+    </div>
   )
 }

@@ -1,15 +1,77 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
-.App{
-    background-color: whitesmoke;
-    /* margin-top: 10px; */
+
+.display-items {
+    position: relative;
+    /* height: 5%; */
+    /* margin-top: 5px; */
+    /* position: relative; */
+
 }
-.App-rectangle{
-    background-color: white;
-    height: 30%;
-    width: 350px; 
-    margin-left: 30px;   
-    margin-top: 10%;
+
+.product-items {
+    position: relative;
+    /* padding: 30px; */
+    /* background-color: red; */
+    text-align: center;
+    display: inline-flex;
+    /* padding-left: 30px;   */
+    /* align-items: baseline; */
+    font-size: 12px; 
+    
+    /* display: inline-block; */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    /* line-height: 18px; */
+    /* identical to box height */
+
+
+    color: #000000;
+
+    
+}
+.product {   
+    position: relative;
+    text-align: center;
+    width: 100px;
+    display: inline-flex;
+    padding: 10px;
+
+    
+}
+.buttons {
+    position: absolute;
+    /* margin-top: 20px; */
+    left: 300px;
+    /* padding: 30px; */
+    /* padding: 10px; */
+    
+    display:inline-flex;
+    align-items:center;
+    /* background-color: red; */
+    /* justify-content: center; */
+    
+      
+        
+}
+.minus {
+    
+    margin-left: 20px; 
+    border-radius: 75px;
+    border: none;
+    background-color: rgb(156, 148, 148);
+}
+.number{
+    padding-left: 5px;
+}
+.plus {
+    margin-left: 10px;
+    border-radius: 100%;
+    border: none;
+    background-color: rgb(156, 148, 148);
 }

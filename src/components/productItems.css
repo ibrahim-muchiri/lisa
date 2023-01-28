@@ -1,75 +1,84 @@
-.products {
-    margin: 0;
+body{
     padding: 0;
-    font-family: sans-serif;
-    box-sizing: border-box;
-    height: 100vh;    
-    display: flex;
-    justify-content: center;
-    /* flex-direction: column */
-    /* align-items: center; */
-    /* color: white;
-    background-color: whitesmoke; */
-    
+    margin: 0;
 }
-
-.product-items{
-    margin-top: 5%;
-    flex-direction: column;
-    position: relative;
-    
-}
-
-.search {
-    width: 500px;
-    height: 50px;
-    background-color: whitesmoke;
-    border-radius: 20px;
+.app {
     display: flex;
     align-items: center;
-    padding: 1px;
+    justify-content: center;
+    
+    
+    
 }
-.search > input {
-    flex: 1;
-    height: 40px;
-    border: none;
-    outline: none;
-    font-size: 18px;
+.appItems {
+    padding: 25px;
+    background-color: whitesmoke;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 30px;
 }
-.h4 {
-    flex-direction: column;
-    margin: 20px;   
 
+.search-rectangle {
+    /* position: absolute; */
+    width: 280px;
+    height: 42px;
+    left: 1089px;
+    top: 49px;
+    
+    background: white;
+    border-radius: 12px;
+    display: flex;
+
+}
+
+.search-icon {
+    /* position: absolute; */
+    left: 8.33%;
+    right: 12.5%;
+    top: 8.33%;
+    bottom: 12.5%;
+    padding-left: 10.75px;
+    padding-top: 11.75px;
+    border: none;
+    
+    /* border: 2px solid rgba(0, 0, 0, 0.5); */
+}
+
+.search-bar {
+    /* position: absolute; */
+    width: 100px;
+    height: 18px;
+    left: 1124px;
+    padding-top: 15px;
+    outline: none;    
+    background-color: white;
+    /* padding-top: 35px; */
+    border: none;
+    margin-left: 10px;
+
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    /* font-weight: 400; */
+    /* font-size: 12px;
+    line-height: 18px; */
+    /* identical to box height */   
+    color: rgba(0, 0, 0, 0.7);
+    
+}
+.tatal-rec {
+    margin-left: 20px;
+    background-color: white;
+}
+.h5{
+    margin-left: 10px;
+    
 }
 .totals {
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: whitesmoke;
-    border-radius: 20px;
-    /* margin: 10px; */
+    margin: 10px;
 }
-.totals > h5 {
-    margin-top: 20px;
-    margin-left: 40px;
-}
-.totals > h2 {    
-    margin-left: 40px;
-}
-.totals > button {
-    margin-top: 25px;
-    margin-left: 400px;
-    
-}
-
-.display_item {
-    display: flex;
-    /* align-items: flex-end; */
-    /* background-color: red; */
-    padding-right: 50px;
-    margin-block-end: 50px;
-    column-gap: 40px;
-    
+.done-rec{
+    border-radius: 5px;
+    margin-left: 280px;
+    margin-bottom: 10px;    
 }
